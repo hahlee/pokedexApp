@@ -73,26 +73,30 @@ p {
 }
 
 .data-wrapper {
-    height: 110px;
-    padding: 10px;
+    height: 180px;
+    padding: 12px;
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: inset 0 0 20px rgba(0, 0, 0, .22);
     color: #fff
 }
 
-.data-name, .data-char, .data-moves {
-    margin: 0 0 5px
+.data-name, .data-id, .data-char, .data-moves {
+    margin: 0 0 5px;
+}
+
+.data-id, .data-char, .data-moves {
+    text-transform: capitalize;
+    margin: 0 0 5px;
+}
+
+.data-name {
+    text-transform:uppercase;
 }
 
 .data-moves {
     padding:0;
     list-style-type:none;
-}
-
-.data-char, .data-move {
-    font-size: 12px;
-    line-height:1.25;
 }
 
 .App {
