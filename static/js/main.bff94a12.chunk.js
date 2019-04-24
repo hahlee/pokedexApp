@@ -507,12 +507,13 @@
                     src: a, className: "sprite-image", alt: "sprite"
                 }
                 ), t.a.createElement("div", { className: "data-wrapper" }
-                    , t.a.createElement("h1", { className: "data-name" }, "ID: ", n, " ", d)
+                    , t.a.createElement("h1", { className: "data-name" }, d)
+                    , t.a.createElement("p", { className: "data-id" }, "ID: ", n)
                     , t.a.createElement("p", { className: "data-char" }, "Type: ", c)
                     , t.a.createElement("ul", { className: "data-moves" }, "Moves:"
-                        , t.a.createElement("li", { className: "data-move" }, "1: ", l)
-                        , t.a.createElement("li", { className: "data-move" }, "2: ", g)
-                        , t.a.createElement("li", { className: "data-move" }, "3: ", z)
+                        , t.a.createElement("li", { className: "data-move" }, l)
+                        , t.a.createElement("li", { className: "data-move" }, g)
+                        , t.a.createElement("li", { className: "data-move" }, z)
                     )
                 ))
         }

@@ -81,12 +81,18 @@ p {
     color: #fff
 }
 
-.data-name {
+.data-name, .data-char, .data-moves {
     margin: 0 0 5px
 }
 
+.data-moves {
+    padding:0;
+    list-style-type:none;
+}
+
 .data-char, .data-move {
-    font-size: 10px
+    font-size: 12px;
+    line-height:1.25;
 }
 
 .App {
