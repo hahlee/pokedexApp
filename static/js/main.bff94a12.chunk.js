@@ -504,74 +504,74 @@
                 className: "detail-view"
             }
                 , t.a.createElement("img", {
-                    src: a, className: "sprite-image", alt: "sprite", backgroundImage: "url(/pokedexApp/static/media/static.png)"
-        }
-        ), t.a.createElement("div", {
-            className: "data-wrapper"
-        }
-            , t.a.createElement("h1", {
-                className: "data-name"
-            }
-                , "ID: ", n, " ", d), t.a.createElement("p", {
-                    className: "data-char"
+                    src: a, className: "sprite-image", alt: "sprite"
                 }
-                    , "Type: ", c)))
+                ), t.a.createElement("div", {
+                    className: "data-wrapper"
+                }
+                    , t.a.createElement("h1", {
+                        className: "data-name"
+                    }
+                        , "ID: ", n, " ", d), t.a.createElement("p", {
+                            className: "data-char"
+                        }
+                            , "Type: ", c)))
+        }
+        ),
+            h = function i(o) {
+                Object(r.a)(this, i),
+                    this.id = o.id,
+                    this.name = o.name,
+                    this.sprite = o.sprites.front_default,
+                    this.type = o.types[0].type.name
+            }
+            ,
+            f = (n(24), function (i) {
+                function o() {
+                    var i;
+                    return Object(r.a)(this, o), (i = Object(u.a)(this, Object(p.a)(o).call(this))).state = {
+                        pokemon: {}
+                    }
+                        , i.handleOnClick = i.handleOnClick.bind(Object(b.a)(Object(b.a)(i))), i
+                }
+                return Object(k.a)(o, i), Object(s.a)(o, [{
+                    key: "handleOnClick", value: function (i) {
+                        var o = this;
+                        fetch("https://pokeapi.co/api/v2/pokemon/".concat(i, "/")).then(function (i) {
+                            return i.json()
+                        }
+                        ).then(function (i) {
+                            var n = new h(i);
+                            o.setState({
+                                pokemon: n
+                            }
+                            )
+                        }
+                        ).catch(function (i) {
+                            return console.log(i)
+                        }
+                        )
+                    }
+                }
+                    , {
+                    key: "render", value: function () {
+                        return t.a.createElement("div", {
+                            className: "App"
+                        }
+                            , t.a.createElement(l, {
+                                handleOnClick: this.handleOnClick
+                            }
+                            ), t.a.createElement(m, {
+                                pokemon: this.state.pokemon
+                            }
+                            ))
+                    }
+                }
+                ]), o
+            }
+                (d.Component));
+        c.a.render(t.a.createElement(f, null), document.getElementById("root"))
     }
-    ),
-h = function i(o) {
-    Object(r.a)(this, i),
-        this.id = o.id,
-        this.name = o.name,
-        this.sprite = o.sprites.front_default,
-        this.type = o.types[0].type.name
-}
-    ,
-    f = (n(24), function (i) {
-        function o() {
-            var i;
-            return Object(r.a)(this, o), (i = Object(u.a)(this, Object(p.a)(o).call(this))).state = {
-                pokemon: {}
-            }
-                , i.handleOnClick = i.handleOnClick.bind(Object(b.a)(Object(b.a)(i))), i
-        }
-        return Object(k.a)(o, i), Object(s.a)(o, [{
-            key: "handleOnClick", value: function (i) {
-                var o = this;
-                fetch("https://pokeapi.co/api/v2/pokemon/".concat(i, "/")).then(function (i) {
-                    return i.json()
-                }
-                ).then(function (i) {
-                    var n = new h(i);
-                    o.setState({
-                        pokemon: n
-                    }
-                    )
-                }
-                ).catch(function (i) {
-                    return console.log(i)
-                }
-                )
-            }
-        }
-            , {
-            key: "render", value: function () {
-                return t.a.createElement("div", {
-                    className: "App"
-                }
-                    , t.a.createElement(l, {
-                        handleOnClick: this.handleOnClick
-                    }
-                    ), t.a.createElement(m, {
-                        pokemon: this.state.pokemon
-                    }
-                    ))
-            }
-        }
-        ]), o
-    }
-        (d.Component));
-c.a.render(t.a.createElement(f, null), document.getElementById("root"))
-}
 
 ],
 [[10,
