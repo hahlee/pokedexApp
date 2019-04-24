@@ -44,4 +44,18 @@
     }
   
 </style>
+
+<script>
+    var displayScreen = document.getElementsByClassName("sprite-image");
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        displayScreen[0].css("background-image", "url(/pokedexApp/static/media/static.png)").css("background-size", "cover").css("background-position", "cover");
+    })
+
+    var pokemon = document.getElementsByClassName("poke-cell");
+
+    pokemon.onclick = function () {
+        displayScreen[0].css("background-image", "none");
+    }
+</script>
 </html>
