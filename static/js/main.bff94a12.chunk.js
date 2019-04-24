@@ -499,7 +499,7 @@
                 , n)
         }
         ), m = (n(22), function (i) {
-            var o = i.pokemon, n = o.id, d = o.name, a = o.sprite, c = o.type, f = o.ability;
+            var o = i.pokemon, n = o.id, d = o.name, a = o.sprite, c = o.type, f = o.move;
             return t.a.createElement("section", {
                 className: "detail-view"
             }
@@ -509,7 +509,7 @@
                 ), t.a.createElement("div", {className: "data-wrapper"}
                     , t.a.createElement("h1", { className: "data-name" }, "ID: ", n, " ", d)
                     , t.a.createElement("p", { className: "data-char" }, "Type: ", c)
-                    , t.a.createElement("p", { className: "data-ability" }, "Ability: ", f)
+                    , t.a.createElement("p", { className: "data-ability" }, "Moves: ", f)
                 ))
         }
         ),
@@ -519,7 +519,7 @@
                     this.name = o.name,
                     this.sprite = o.sprites.front_default,
                     this.type = o.types[0].type.name,
-                    this.ability = o.abilities[0].ability.name
+                    this.move = o.moves[].move.name
             }
             ,
             f = (n(24), function (i) {
