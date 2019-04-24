@@ -499,17 +499,21 @@
                 , n)
         }
         ), m = (n(22), function (i) {
-            var o = i.pokemon, n = o.id, d = o.name, a = o.sprite, c = o.type, f = o.move;
+            var o = i.pokemon, n = o.id, d = o.name, a = o.sprite, c = o.type, f = o.move1, g = o.move2, h = o.move3;
             return t.a.createElement("section", {
                 className: "detail-view"
             }
                 , t.a.createElement("img", {
                     src: a, className: "sprite-image", alt: "sprite"
                 }
-                ), t.a.createElement("div", {className: "data-wrapper"}
+                ), t.a.createElement("div", { className: "data-wrapper" }
                     , t.a.createElement("h1", { className: "data-name" }, "ID: ", n, " ", d)
                     , t.a.createElement("p", { className: "data-char" }, "Type: ", c)
-                    , t.a.createElement("p", { className: "data-ability" }, "Moves: ", f)
+                    , t.a.createElement("ul", { className: "data-moves" }, "Moves:"
+                        , t.a.createElement("li", { className: "data-move" }, "1: ", f)
+                        , t.a.createElement("li", { className: "data-move" }, "2: ", g)
+                        , t.a.createElement("li", { className: "data-move" }, "3: ", h)
+                    )
                 ))
         }
         ),
@@ -519,7 +523,9 @@
                     this.name = o.name,
                     this.sprite = o.sprites.front_default,
                     this.type = o.types[0].type.name,
-                    this.move = o.moves.move.name
+                    this.move1 = o.moves[0].move.name,
+                    this.move2 = o.moves[1].move.name,
+                    this.move3 = o.moves[2].move.name,
             }
             ,
             f = (n(24), function (i) {
