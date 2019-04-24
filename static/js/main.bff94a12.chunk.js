@@ -525,7 +525,7 @@
                     this.type = o.types[0].type.name,
                     this.move1 = o.moves[0].move.name,
                     this.move2 = o.moves[1].move.name,
-                    this.move3 = o.moves[2].move.name,
+                    this.move3 = o.moves[2].move.name
             }
             ,
             f = (n(24), function (i) {
