@@ -519,7 +519,7 @@
                     this.name = o.name,
                     this.sprite = o.sprites.front_default,
                     this.type = o.types[0].type.name,
-                    this.move = o.moves[].move.name
+                    this.move = o.moves.move.name
             }
             ,
             f = (n(24), function (i) {
