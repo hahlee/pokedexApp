@@ -58,18 +58,18 @@ p {
     justify-content: center
 }
 
+.data-wrapper,
+.sprite-image {
+    width: 80%;
+    background-color: #585858
+}
+
 .sprite-image {
     height: 150px;
     margin: 10px auto;
     border: 15px solid #fff;
     border-radius: 5px;
-    color: darkslategray;
-}
-
-.data-wrapper,
-.sprite-image {
-    width: 80%;
-    background-color: #585858
+    background-color: darkslategray;
 }
 
 .data-wrapper {
