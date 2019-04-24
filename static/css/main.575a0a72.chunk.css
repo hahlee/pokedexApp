@@ -61,9 +61,9 @@ p {
 .sprite-image {
     height: 150px;
     margin: 10px auto;
-    border: 15px solid #dedede;
+    border: 15px solid #fff;
     border-radius: 5px;
-    color: #585858
+    color: darkslategray;
 }
 
 .data-wrapper,
@@ -73,7 +73,7 @@ p {
 }
 
 .data-wrapper {
-    height: 180px;
+    height: 170px;
     padding: 12px;
     margin: 0 auto;
     border-radius: 5px;
@@ -85,7 +85,7 @@ p {
     margin: 0 0 5px;
 }
 
-.data-id, .data-char, .data-moves {
+.data-id, .data-char {
     text-transform: capitalize;
     margin: 0 0 5px;
 }
@@ -96,7 +96,13 @@ p {
 
 .data-moves {
     padding:0;
+    margin:0 auto;
     list-style-type:none;
+}
+
+.data-move {
+    font-size:12px;
+    line-height:1.25;
 }
 
 .App {
