@@ -127,13 +127,13 @@ p {
     }
 
     .poke-list {
-        height: 45%;
+        height: 40%;
         width: 75%;
         margin: 0;
     }
 
     .detail-view {
-        height: 50%;
+        height: 55%;
         width: 80%;
         max-width: 300px;
     }
