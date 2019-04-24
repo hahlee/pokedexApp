@@ -51,13 +51,13 @@
     
     document.addEventListener('DOMContentLoaded', function () {
         console.log("blah blah");
-        displayScreen.css("background-image", "url(/pokedexApp/static/media/static.png)").css("background-size", "cover").css("background-position", "cover");
+        displayScreen[0].css("background-image", "url(/pokedexApp/static/media/static.png)").css("background-size", "cover").css("background-position", "cover");
     })
 
     var pokemon = document.getElementsByClassName("poke-cell");
 
     pokemon.onclick = function () {
-        displayScreen.css("background-image", "none");
+        displayScreen[0].css("background-image", "none");
     }
 </script>
 </html>
