@@ -122,20 +122,22 @@ p {
     .App {
         flex-flow: column;
         width: 95%;
-        height: 650px;
+        min-height: 650px;
         margin: 15px auto;
+        padding:0;
     }
 
     .poke-list {
-        height: 30%;
+        height: 55%;
         width: 75%;
-        margin: 0;
+        margin: 15px auto;
     }
 
     .detail-view {
-        height: 60%;
+        height: 70%;
         width: 80%;
         max-width: 300px;
+        border-radius: 10px;
     }
     .data-wrapper {
         height:190px;
