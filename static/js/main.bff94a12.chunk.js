@@ -503,7 +503,7 @@
             return t.a.createElement("section", {
                 className: "detail-view"
             }
-                , t.a.createElement("img", { src: a, backgroundImage: "url(/pokedexApp/static/media/static.png)", backgroundSize: "cover", className: "sprite-image" })
+                , t.a.createElement("img", { src: a, /*backgroundImage: "url(/pokedexApp/static/media/static.jpg)", backgroundSize: "cover", */className: "sprite-image" })
                 , t.a.createElement("div", { className: "data-wrapper" }
                     , t.a.createElement("h1", { className: "data-name" }, d)
                     , t.a.createElement("p", { className: "data-id" }, "ID: ", n)
